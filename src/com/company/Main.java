@@ -29,14 +29,14 @@ public class Main {
             System.out.println(array[j]+"\t");
         }
 
-        int max = array[0];
+        int min = array[0];
         int index = 1;
         for (int k = 0; k<array.length; k++) {
-            if (array[k] > max) {
-                max = array[k];
+            if (array[k] < min) {
+                min = array[k];
                 index = k+1;
             }
         }
-        System.out.println("The largest property value in the list is " + max + " ,at position " + index);
+        System.out.println("The largest property value in the list is " + min + " ,at position " + index);
     }
 }
